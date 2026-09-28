@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ComicCraft - AI Comic Story Creator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="brand">🎨 <span>ComicCraft</span></div>
+      <div class="nav-tag">AI Comic Story Creator</div>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-copy">
+        <span class="badge">✨ Powered by AI</span>
+        <h1>Turn your idea into a <span>comic story.</span></h1>
+        <p>Create a personalized 5-panel comic with characters, scenes, narration and visual prompts.</p>
+      </div>
+
+      <form id="comicForm" class="creator-card">
+        <div class="section-title">
+          <span class="step">01</span>
+          <div>
+            <h2>Create Your Story</h2>
+            <p>Tell ComicCraft what you want to create.</p>
+          </div>
+        </div>
+
+        <label for="prompt">Story Prompt</label>
+        <textarea id="prompt" name="prompt" required
+          placeholder="Example: A brave fox exploring an enchanted forest..."></textarea>
+
+        <div class="grid two">
+          <div>
+            <label for="character">Main Character Name</label>
+            <input id="character" name="character" required placeholder="e.g. Arjun">
+          </div>
+          <div>
+            <label for="setting">Setting</label>
+            <select id="setting" name="setting">
+              <option>Forest</option>
+              <option>School</option>
+              <option>City</option>
+              <option>Space</option>
+              <option>Village</option>
+              <option>Fantasy Kingdom</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid two">
+          <div>
+            <label for="tone">Story Tone</label>
+            <select id="tone" name="tone">
+              <option>Light-hearted</option>
+              <option>Dramatic</option>
+              <option>Funny</option>
+              <option>Poetic</option>
+              <option>Adventure</option>
+              <option>Mysterious</option>
+            </select>
+          </div>
+          <div>
+            <label for="style">Art Style</label>
+            <select id="style" name="style">
+              <option>Anime</option>
+              <option>Comic Book</option>
+              <option>Pixel Art</option>
+              <option>Realistic</option>
+              <option>Watercolor</option>
+            </select>
+          </div>
+        </div>
+
+        <button class="generate-btn" type="submit">
+          <span>✨</span> Generate My Comic
+        </button>
+        <p class="hint">Creates a 5-panel story preview from your inputs.</p>
+      </form>
+    </div>
+  </header>
+
+  <main id="resultSection" class="result-section hidden">
+    <div class="result-header">
+      <div>
+        <span class="badge dark">YOUR CREATION</span>
+        <h2 id="comicTitle">Your Comic</h2>
+        <p id="comicMeta"></p>
+      </div>
+      <div class="actions">
+        <button id="downloadBtn" class="secondary-btn">⬇ Download / Print</button>
+        <button id="newBtn" class="outline-btn">＋ New Comic</button>
+      </div>
+    </div>
+
+    <div id="loading" class="loading hidden">
+      <div class="spinner"></div>
+      <h3>Creating your comic...</h3>
+      <p>Building your 5-panel story and scene prompts.</p>
+    </div>
+
+    <div id="comicGrid" class="comic-grid"></div>
+  </main>
+
+  <footer>
+    <p>ComicCraft • AI Comic Story Creator</p>
+    <p class="footer-note">Frontend prototype based on the ComicCraft project specification.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

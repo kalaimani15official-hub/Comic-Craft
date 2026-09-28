@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
+      <defs>
+        <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#3d8068"/>
+          <stop offset="100%" stop-color="#c9f7d5"/>
+        </linearGradient>
+        <filter id="soft"><feGaussianBlur stdDeviation="12"/></filter>
+      </defs>
+      <rect width="800" height="420" rx="28" fill="url(#g)"/>
+      <circle cx="650" cy="80" r="65" fill="#fff" opacity=".18" filter="url(#soft)"/>
+      <circle cx="120" cy="320" r="90" fill="#fff" opacity=".10" filter="url(#soft)"/>
+      <g opacity=".8" fill="#fff">
+        <circle cx="100" cy="85" r="5"/><circle cx="180" cy="135" r="4"/>
+        <circle cx="700" cy="220" r="5"/><circle cx="570" cy="45" r="4"/>
+      </g>
+      <!-- trees -->
+      <g fill="#173f35" opacity=".72">
+        <path d="M70 330 L120 180 L170 330 Z"/><path d="M620 330 L670 160 L720 330 Z"/>
+        <rect x="113" y="300" width="14" height="55"/><rect x="663" y="295" width="14" height="60"/>
+      </g>
+      <!-- fox -->
+      <g transform="translate(330 130)">
+        <ellipse cx="70" cy="185" rx="75" ry="25" fill="#000" opacity=".16"/>
+        <path d="M20 95 Q5 55 28 20 L62 48 L93 20 Q118 57 103 96 Q95 155 63 166 Q30 153 20 95Z" fill="#e86d3d"/>
+        <path d="M27 45 L12 5 L54 28Z" fill="#f58b55"/>
+        <path d="M99 45 L118 5 L75 28Z" fill="#f58b55"/>
+        <path d="M32 96 Q65 70 96 96 L88 143 Q64 158 40 143Z" fill="#fff1d9"/>
+        <circle cx="48" cy="82" r="6" fill="#241b25"/><circle cx="82" cy="82" r="6" fill="#241b25"/>
+        <circle cx="50" cy="80" r="2" fill="#fff"/><circle cx="84" cy="80" r="2" fill="#fff"/>
+        <path d="M59 100 Q65 106 71 100" fill="none" stroke="#241b25" stroke-width="4" stroke-linecap="round"/>
+        <path d="M15 150 Q-35 130 -48 88 Q-5 105 29 138" fill="#f58b55"/>
+      </g>
+      <text x="400" y="390" text-anchor="middle" fill="#fff" font-family="Arial" font-size="23" font-weight="700">
+        Foxy in the Enchanted Forest
+      </text>
+      <text x="690" y="65" font-size="34">💎</text>
+      <text x="90" y="70" font-size="30">⭐</text>
+    </svg>
